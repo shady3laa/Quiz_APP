@@ -1,0 +1,226 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+  min-height: 98vh;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz {
+  flex: 1;
+  width: 100%;
+  height: 25%;
+  font-size: 70px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.select {
+  flex: 1;
+}
+
+#category,
+#difficulty {
+  width: 280px;
+  height: 56px;
+  border-radius: 7px;
+  font-size: 26px;
+  margin: 5px 0;
+  padding: 0 13px;
+}
+
+.startBtn {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 65px;
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+  padding: 14px 0px 0px 0px;
+  margin: 0 0 30px 0;
+}
+
+.startBtn:hover {
+  color: white;
+  background-color: black;
+  transition-duration: 0.9s;
+}
+
+.ques-container {
+  flex: 3;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.question {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 9px 13px;
+  font-size: 30px;
+  text-align: center;
+  margin: 17px 0;
+  width: 800px;
+  
+}
+
+.options{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.option{
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 9px 13px;
+  font-size: 23px;
+  font-style: italic;
+  width: 30vw;
+  min-width: 200px;
+  text-align: center;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.option:hover {
+  color: white;
+  background-color: black;
+  transition: 0.07s;
+}
+
+.nxtBtnContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nxtBtn,
+.prvBtn,
+.newGameBtn,
+.checkBtn {
+  margin: 50px;
+  border: 1px solid black;
+  border-radius: 35px;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  padding: 4px 0 0 0;
+  font-family: monospace;
+  font-size: 22px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nxtBtn:hover,
+.prvBtn:hover,
+.newGameBtn:hover,
+.checkBtn:hover {
+  color: white;
+  background-color: black;
+}
+.scoreBoard {
+  display: flex;
+  flex: 3;
+  height: 100%;
+  flex-direction: column;
+}
+
+.scoreCard {
+  min-width: 45vw;
+  margin: 40px 40px;
+}
+
+.scoreCard > div {
+  font-size: 24px;
+  flex: 1;
+}
+
+.correct {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.score {
+  font-size: 45px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.marks {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+  text-align: center;
+  padding: 6px 0 0 0;
+  margin: 0 auto;
+}
+
+.outOf {
+  font-size: 19px;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.scoreBoardBtn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hide {
+  display: none;
+}
+
+.border {
+  border: 2px solid red;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.flexBoxColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* -----------------------------------MEDIA QUERY--------------------------------- */
+@media only screen and (max-width: 600px) {
+  .option {
+    width: 70vw;
+  }
+
+  .quiz {
+    font-size: 55px;
+  }
+}

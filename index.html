@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz flexBox">QUIZ APP</div>
+      <div class="select">
+        <div class="category">
+          <select name="category" id="category" placeholder="category">
+            <option value="any">Any</option>
+            <option value="film_and_tv" selected>Film & TV</option>
+            <option value="arts_and_literaure">Art & literature</option>
+            <option value="food_and_drink">Food & Drink</option>
+            <option value="general_knowledge">General Knowledge</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+            <option value="music">Music</option>
+            <option value="science">Science</option>
+            <option value="society_and_culture">Society & Culture</option>
+            <option value="sports_and_leisure">Sports & leisure</option>
+          </select>
+        </div>
+        <div class="difficult">
+          <select name="difficulty" id="difficulty" placeholder="difficulty">
+            <option value="any">Any</option>
+            <option value="easy" selected>Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </div>
+      <div class="startBtn">START</div>
+
+      <div class="ques-container hide">
+        <div class="question"></div>
+        <div class="options">
+          <div class="option option1"></div>
+          <div class="option option2"></div>
+          <div class="option option3"></div>
+          <div class="option option4"></div>
+        </div>
+        <div class="nxtBtnContainer">
+          <div class="prvBtn hide">Previous</div>
+          <div class="nxtBtn">NEXT</div>
+        </div>
+      </div>
+      <div class="scoreBoard hide">
+        <div class="flexBox scoreCard">
+          <div class="flexBoxColumn">
+            <div>unattempted</div>
+            <div id="num1">0</div>
+          </div>
+          <div class="flexBoxColumn correct">
+            <div>Correct</div>
+            <div id="num2">0</div>
+          </div>
+          <div class="flexBoxColumn">
+            <div>Incorrect</div>
+            <div id="num3">0</div>
+          </div>
+        </div>
+        <div class="score">SCORE</div>
+        <div class="marks">0</div>
+        <div class="outOf">out of 10</div>
+        <div class="scoreBoardBtn">
+          <div class="checkBtn">REVIEW</div>
+          <div class="newGameBtn">NEW QUIZ</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
